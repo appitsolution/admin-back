@@ -1,4 +1,4 @@
-const server = require("./server");
+const server = require("./src/server");
 
 server.listen(3000, (err) => {
   if (err) console.log(err);
