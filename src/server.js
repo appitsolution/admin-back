@@ -5,7 +5,7 @@ const logger = require("./logger");
 const app = express();
 
 // cors
-app.use(cors());
+// app.use(cors());
 app.use(logger);
 
 app.use("/user", user);
