@@ -16,7 +16,7 @@ router.get("/tasks/:id", taskOne);
 
 router.post("/tasks/add", createTask);
 
-router.post("/tasks/:id/delete", deleteTask);
+router.delete("/tasks/:id/delete", deleteTask);
 
 router.post("/login", loginAdmin);
 
