@@ -7,7 +7,10 @@ const loginAdmin = async (req, res) => {
   const data = await req.body;
   if (data.login === login && data.password === password) {
     res.status(200);
-    res.send("ok");
+    res.send({
+      entry: "accept",
+      token: "",
+    });
   } else {
     res.status(404);
     res.send("login or password bad");
